@@ -2,7 +2,8 @@
 
 /*
     CONSIGNES
-    Vous développez un petit jeu de rôle (RPG). Lorsque le joueur commence une partie, son personnage doit afficher un message de bienvenue.
+    Vous développez un petit jeu de rôle (RPG). 
+    Lorsque le joueur commence une partie, son personnage doit afficher un message de bienvenue.
     1. Créez une méthode appelée AfficherBienvenue().
     2. Cette méthode doit afficher dans la console : "Bienvenue dans votre aventure, héros !".
     3. Appelez cette méthode depuis la méthode Main().
@@ -11,6 +12,15 @@ class Program
 {
     static void Main(string[] args)
     {
-        
+        Console.WriteLine("Appuyer sur 'ENTER' pour commencer votre partie");
+        Console.ReadLine();
+        AfficherBienvenue();
+
     }
+
+    static void AfficherBienvenue()
+    {
+        Console.WriteLine("Bienvenue dans votre aventure, héro !");
+    }
+
 }
